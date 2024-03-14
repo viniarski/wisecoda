@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../images/assets/logo_wisecoda.png';
+import logo from '/public/assets/logo_wisecoda.png';
 import Header from '../components/Header';
 
 const HomePage = () => {
@@ -10,19 +10,21 @@ const HomePage = () => {
         src={logo}
         alt="Wisecoda Logo"
         width={500}
-        height={500}
+        height="auto"
         className="absolute opacity-10 z-0"
       />
       <Header />
       <main className="z-10 text-center">
-        <h2 className="text-5xl font-bold text-primary mb-4 max-w-3xl mx-auto leading-tight">
-          We build your online presence
-        </h2>
-        <p className="text-xl text-secondary mb-8">
-          &#123;From concept to launch,{' '}
+        <h1 className="text-8xl font-bold text-primary text-left mb-4 max-w-3xl mx-auto leading-tight">
+          We build your
+          <br /> online <br />
+          presence
+        </h1>
+        <p className="text-xl text-secondary text-left mb-8">
+          &#123;From concept to launch,
+          <br /> we're here to bring
           <strong>
-            we're here to bring{' '}
-            <span className="text-accent">your vision to life!&#125;</span>
+            <span className="text-accent"> your vision to life</span>
           </strong>
           &#125;
         </p>

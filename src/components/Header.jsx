@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../images/assets/logo.png';
+import logo from '/public/assets/logo.png';
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         src={logo}
         alt="Wisecoda Logo"
         width={150}
-        height={50}
+        height="auto"
         className="h-auto w-auto"
       />
       <nav>
