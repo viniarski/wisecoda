@@ -24,7 +24,7 @@ const Header = () => {
         <Image
           src={logo}
           alt="Wisecoda Logo"
-          width={150}
+          width={200}
           height="auto"
           className="h-auto w-auto"
         />
@@ -52,7 +52,7 @@ const Header = () => {
           <li>
             <a
               href="#"
-              onClick={(e) => handleLinkClick(e, 'gallery')}
+              onClick={(e) => handleLinkClick(e, 'projects')}
               className="text-secondary hover:text-primary transition duration-300"
             >
               Gallery

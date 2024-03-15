@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '/public/assets/logo.png';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -22,24 +23,35 @@ const Footer = () => {
           <nav>
             <ul className="flex space-x-4">
               <li>
-                <a href="#" className="text-light hover:text-primary">
+                <Link href="/" className="text-light hover:text-primary">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-light hover:text-primary">
+                <Link href="/#about" className="text-light hover:text-primary">
                   Discover
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-light hover:text-primary">
-                  Gallery
-                </a>
+                <Link
+                  href="/#projects"
+                  className="text-light hover:text-primary"
+                >
+                  Projects
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-light hover:text-primary">
+                <Link
+                  href="/#contact"
+                  className="text-light hover:text-primary"
+                >
                   Contact
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-light hover:text-primary">
+                  FAQ
+                </Link>
               </li>
             </ul>
           </nav>
