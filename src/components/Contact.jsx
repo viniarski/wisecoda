@@ -30,42 +30,36 @@ const Contact = () => {
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
           <div className="flex mb-6">
             <div className="w-1/2 mr-4">
-              <label htmlFor="name" className="block mb-2">
-                Name
-              </label>
               <input
                 type="text"
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded"
+                placeholder="Name"
                 required
               />
             </div>
             <div className="w-1/2">
-              <label htmlFor="email" className="block mb-2">
-                Email
-              </label>
               <input
                 type="email"
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded"
+                placeholder="Email"
                 required
               />
             </div>
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="block mb-2">
-              Message
-            </label>
             <textarea
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded"
+              className="w-full px-4 py-2 border border-gray-300 rounded resize-none"
               rows={5}
+              placeholder="Message"
               required
             ></textarea>
           </div>

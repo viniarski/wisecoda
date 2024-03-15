@@ -1,6 +1,8 @@
+// src/components/Footer.jsx
 import React from 'react';
 import Image from 'next/image';
 import logo from '/public/assets/logo.png';
+import xIcon from '/public/assets/x.png';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -20,7 +22,7 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Wisecoda. All rights reserved.
             </p>
           </div>
-          <nav>
+          <nav className="mb-4 md:mb-0">
             <ul className="flex space-x-4">
               <li>
                 <Link href="/" className="text-light hover:text-primary">
@@ -55,6 +57,22 @@ const Footer = () => {
               </li>
             </ul>
           </nav>
+          <div className="flex items-center">
+            <a
+              href="https://twitter.com/wisecoda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-light hover:text-primary"
+            >
+              <Image
+                src={xIcon}
+                alt="X Icon"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+            </a>
+          </div>
         </div>
         <div className="mt-8">
           <p className="text-sm text-center">
