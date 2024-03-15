@@ -55,6 +55,11 @@ const Footer = () => {
                   FAQ
                 </Link>
               </li>
+              <li>
+                <Link href="/pricing" className="text-light hover:text-primary">
+                  Pricing
+                </Link>
+              </li>
             </ul>
           </nav>
           <div className="flex items-center">
@@ -67,9 +72,9 @@ const Footer = () => {
               <Image
                 src={xIcon}
                 alt="X Icon"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={24}
+                height={24}
+                className="w-6 h-6"
               />
             </a>
           </div>
