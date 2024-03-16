@@ -1,6 +1,5 @@
 // src/components/ParallaxBackground.jsx
 import React, { useEffect, useRef } from 'react';
-import logo from '/public/assets/logo_wisecoda.png';
 
 const ParallaxBackground = () => {
   const parallaxRef = useRef(null);
@@ -24,7 +23,9 @@ const ParallaxBackground = () => {
     <div
       ref={parallaxRef}
       className="parallax-background"
-      style={{ backgroundImage: `url(${logo.src})` }}
+      style={{
+        backgroundImage: "url('/assets/logo_wisecoda.png')",
+      }}
     ></div>
   );
 };
