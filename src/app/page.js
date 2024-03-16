@@ -23,18 +23,18 @@ const HomePage = () => {
       <main className="flex-grow">
         <section
           id="hero"
-          className="relative min-h-screen flex items-center justify-center"
+          className="relative min-h-screen flex items-center justify-center max-w-7xl mx-auto px-4 pt-8"
         >
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2">
-                <h1 className="text-8xl md:text-8xl font-bold text-primary mb-4 leading-tight animate-slide-in">
+                <h1 className="text-8xl md:text-9xl font-bold text-primary mb-4 leading-tight animate-slide-in">
                   <span className="block">We build</span>
                   <span className="block">online</span>
                   <span className="block">presence</span>
                 </h1>
-                <p className="text-xl text-secondary mb-8">
-                  &#123;From concept to launch, we're here <br /> to bring
+                <p className="text-xl text-secondary mb-8 mt-8">
+                  &#123;From concept to launch, we're here to bring
                   <strong>
                     <span className="text-accent"> your vision to life</span>
                   </strong>

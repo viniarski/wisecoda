@@ -10,18 +10,38 @@ const FAQ = () => {
 
   return (
     <section id="faq" className="bg-gray-100 py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-8 md:px-16">
         <h2 className="text-4xl font-bold mb-8 text-primary">FAQ</h2>
-        <div className="space-y-4">
+        <div className="space-y-2">
           <div
-            className="border border-gray-300 rounded p-4 cursor-pointer"
+            className={`border border-gray-300 rounded-2xl p-6 cursor-pointer transition duration-300 ${
+              activeIndex === 0 ? 'bg-white shadow-md' : 'bg-gray-100'
+            }`}
             onClick={() => toggleAccordion(0)}
           >
-            <h3 className="text-xl font-bold mb-2">
-              What sets Wisecoda apart from other web development agencies?
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold">
+                What sets Wisecoda apart from other web development agencies?
+              </h3>
+              <svg
+                className={`w-6 h-6 transition-transform duration-300 ${
+                  activeIndex === 0 ? 'transform rotate-45' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </div>
             {activeIndex === 0 && (
-              <p className="text-lg">
+              <p className="text-lg mt-4">
                 At Wisecoda, we blend wisdom with code to create innovative
                 digital solutions that drive tangible business results. Our
                 unique approach, backed by expertise and advanced technology,
@@ -30,15 +50,35 @@ const FAQ = () => {
             )}
           </div>
           <div
-            className="border border-gray-300 rounded p-4 cursor-pointer"
+            className={`border border-gray-300 rounded-2xl p-6 cursor-pointer transition duration-300 ${
+              activeIndex === 1 ? 'bg-white shadow-md' : 'bg-gray-100'
+            }`}
             onClick={() => toggleAccordion(1)}
           >
-            <h3 className="text-xl font-bold mb-2">
-              Can you customize your web development services to suit my
-              business needs?
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold">
+                Can you customize your web development services to suit my
+                business needs?
+              </h3>
+              <svg
+                className={`w-6 h-6 transition-transform duration-300 ${
+                  activeIndex === 1 ? 'transform rotate-45' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </div>
             {activeIndex === 1 && (
-              <p className="text-lg">
+              <p className="text-lg mt-4">
                 Absolutely! We understand that every business is unique, which
                 is why we offer tailored solutions to meet your specific
                 requirements. Whether you're a small startup or a large
@@ -48,15 +88,35 @@ const FAQ = () => {
             )}
           </div>
           <div
-            className="border border-gray-300 rounded p-4 cursor-pointer"
+            className={`border border-gray-300 rounded-2xl p-6 cursor-pointer transition duration-300 ${
+              activeIndex === 2 ? 'bg-white shadow-md' : 'bg-gray-100'
+            }`}
             onClick={() => toggleAccordion(2)}
           >
-            <h3 className="text-xl font-bold mb-2">
-              How long does it typically take to complete a web development
-              project?
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold">
+                How long does it typically take to complete a web development
+                project?
+              </h3>
+              <svg
+                className={`w-6 h-6 transition-transform duration-300 ${
+                  activeIndex === 2 ? 'transform rotate-45' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </div>
             {activeIndex === 2 && (
-              <p className="text-lg">
+              <p className="text-lg mt-4">
                 The duration of a web development project varies depending on
                 the complexity and scope of the project. However, at Wisecoda,
                 we strive to deliver high-quality results within a reasonable
@@ -70,15 +130,35 @@ const FAQ = () => {
             )}
           </div>
           <div
-            className="border border-gray-300 rounded p-4 cursor-pointer"
+            className={`border border-gray-300 rounded-2xl p-6 cursor-pointer transition duration-300 ${
+              activeIndex === 3 ? 'bg-white shadow-md' : 'bg-gray-100'
+            }`}
             onClick={() => toggleAccordion(3)}
           >
-            <h3 className="text-xl font-bold mb-2">
-              Do you provide ongoing maintenance and support after the website
-              is launched?
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold">
+                Do you provide ongoing maintenance and support after the website
+                is launched?
+              </h3>
+              <svg
+                className={`w-6 h-6 transition-transform duration-300 ${
+                  activeIndex === 3 ? 'transform rotate-45' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </div>
             {activeIndex === 3 && (
-              <p className="text-lg">
+              <p className="text-lg mt-4">
                 Yes, we offer ongoing maintenance and support services to ensure
                 that your website remains up-to-date, secure, and performs
                 optimally. Our maintenance packages include regular software
@@ -92,14 +172,35 @@ const FAQ = () => {
             )}
           </div>
           <div
-            className="border border-gray-300 rounded p-4 cursor-pointer"
+            className={`border border-gray-300 rounded-2xl p-6 cursor-pointer transition duration-300 ${
+              activeIndex === 4 ? 'bg-white shadow-md' : 'bg-gray-100'
+            }`}
             onClick={() => toggleAccordion(4)}
           >
-            <h3 className="text-xl font-bold mb-2">
-              Can you help with search engine optimization (SEO) for my website?
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold">
+                Can you help with search engine optimization (SEO) for my
+                website?
+              </h3>
+              <svg
+                className={`w-6 h-6 transition-transform duration-300 ${
+                  activeIndex === 4 ? 'transform rotate-45' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </div>
             {activeIndex === 4 && (
-              <p className="text-lg">
+              <p className="text-lg mt-4">
                 Absolutely! We understand the importance of search engine
                 visibility for the success of your website. Our team of SEO
                 experts can help optimize your website to improve its search
@@ -114,14 +215,35 @@ const FAQ = () => {
             )}
           </div>
           <div
-            className="border border-gray-300 rounded p-4 cursor-pointer"
+            className={`border border-gray-300 rounded-2xl p-6 cursor-pointer transition duration-300 ${
+              activeIndex === 5 ? 'bg-white shadow-md' : 'bg-gray-100'
+            }`}
             onClick={() => toggleAccordion(5)}
           >
-            <h3 className="text-xl font-bold mb-2">
-              Do you offer custom website design, or do you work with templates?
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold">
+                Do you offer custom website design, or do you work with
+                templates?
+              </h3>
+              <svg
+                className={`w-6 h-6 transition-transform duration-300 ${
+                  activeIndex === 5 ? 'transform rotate-45' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </div>
             {activeIndex === 5 && (
-              <p className="text-lg">
+              <p className="text-lg mt-4">
                 At Wisecoda, we specialize in custom website design to ensure
                 that your website stands out from the competition and aligns
                 with your brand identity. We believe that every business is
@@ -136,14 +258,34 @@ const FAQ = () => {
             )}
           </div>
           <div
-            className="border border-gray-300 rounded p-4 cursor-pointer"
+            className={`border border-gray-300 rounded-2xl p-6 cursor-pointer transition duration-300 ${
+              activeIndex === 6 ? 'bg-white shadow-md' : 'bg-gray-100'
+            }`}
             onClick={() => toggleAccordion(6)}
           >
-            <h3 className="text-xl font-bold mb-2">
-              How do you ensure the security of my website?
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold">
+                How do you ensure the security of my website?
+              </h3>
+              <svg
+                className={`w-6 h-6 transition-transform duration-300 ${
+                  activeIndex === 6 ? 'transform rotate-45' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </div>
             {activeIndex === 6 && (
-              <p className="text-lg">
+              <p className="text-lg mt-4">
                 Website security is a top priority for us at Wisecoda. We
                 implement various security measures to protect your website from
                 potential threats and vulnerabilities. Our security practices
