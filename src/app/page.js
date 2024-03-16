@@ -33,7 +33,7 @@ const HomePage = () => {
                   <span className="block">online</span>
                   <span className="block">presence</span>
                 </h1>
-                <p className="text-xl text-secondary mb-8 mt-8">
+                <p className="text-xl text-secondary mb-8 py-8">
                   &#123;From concept to launch, we're here to bring
                   <strong>
                     <span className="text-accent"> your vision to life</span>
