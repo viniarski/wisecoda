@@ -2,14 +2,13 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
-import logo from '/public/assets/logo_wisecoda.png';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import AboutUs from '../components/AboutUs';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Projects from '../components/Projects';
+import ParallaxBackground from '../components/ParallaxBackground';
 
 const HomePage = () => {
   const handleGetStartedClick = () => {
@@ -25,6 +24,7 @@ const HomePage = () => {
           id="hero"
           className="relative min-h-screen flex items-center justify-center max-w-7xl mx-auto px-4 pt-8"
         >
+          <ParallaxBackground />
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2">
@@ -33,7 +33,7 @@ const HomePage = () => {
                   <span className="block">online</span>
                   <span className="block">presence</span>
                 </h1>
-                <p className="text-xl text-secondary mb-8 py-8">
+                <p className="text-xl text-secondary mb-8 py-8 animate-slide-in-from-top">
                   &#123;From concept to launch, we're here to bring
                   <strong>
                     <span className="text-accent"> your vision to life</span>
@@ -46,15 +46,6 @@ const HomePage = () => {
                 >
                   Get Started
                 </button>
-              </div>
-              <div className="md:w-1/2 mt-8 md:mt-0">
-                <Image
-                  src={logo}
-                  alt="Wisecoda Logo"
-                  width={680}
-                  height="auto"
-                  className="opacity-20"
-                />
               </div>
             </div>
           </div>
