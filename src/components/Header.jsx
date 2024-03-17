@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 py-8 z-10 bg-light">
+    <header className="top-0 left-0 right-0 p-8 z-10 bg-light">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
@@ -97,7 +97,7 @@ const Header = () => {
               <Link href="/#hero" legacyBehavior>
                 <a
                   onClick={(e) => handleLinkClick(e, 'hero')}
-                  className="block text-secondary hover:text-primary py-2 transition duration-300"
+                  className="block text-secondary hover:text-primary transition duration-300"
                 >
                   Home
                 </a>
@@ -107,7 +107,7 @@ const Header = () => {
               <Link href="/#about" legacyBehavior>
                 <a
                   onClick={(e) => handleLinkClick(e, 'about')}
-                  className="block text-secondary hover:text-primary py-2 transition duration-300"
+                  className="block text-secondary hover:text-primary transition duration-300"
                 >
                   Discover
                 </a>
@@ -117,7 +117,7 @@ const Header = () => {
               <Link href="/#contact" legacyBehavior>
                 <a
                   onClick={(e) => handleLinkClick(e, 'contact')}
-                  className="block text-secondary hover:text-primary py-2 transition duration-300"
+                  className="block text-secondary hover:text-primary transition duration-300"
                 >
                   Contact
                 </a>

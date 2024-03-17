@@ -19,13 +19,13 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-light flex flex-col">
       <Header />
+
       <main className="flex-grow">
         <section
           id="hero"
           className="relative min-h-screen flex items-center justify-center max-w-7xl mx-auto px-4 pt-8"
         >
-          <ParallaxBackground />
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2">
                 <h1 className="text-8xl md:text-9xl font-bold text-primary mb-4 leading-tight animate-slide-in">
@@ -40,6 +40,7 @@ const HomePage = () => {
                   </strong>
                   &#125;
                 </p>
+
                 <button
                   className="bg-accent text-light px-6 py-3 rounded-full hover:bg-secondary transition duration-300"
                   onClick={handleGetStartedClick}
@@ -47,6 +48,7 @@ const HomePage = () => {
                   Get Started
                 </button>
               </div>
+              <ParallaxBackground />
             </div>
           </div>
         </section>

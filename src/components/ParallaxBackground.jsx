@@ -1,5 +1,9 @@
 // src/components/ParallaxBackground.jsx
 import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ParallaxBackground = () => {
   const parallaxRef = useRef(null);
@@ -7,27 +11,16 @@ const ParallaxBackground = () => {
   useEffect(() => {
     const parallaxContainer = parallaxRef.current;
 
-    const handleScroll = () => {
-      const scrollPosition = window.pageYOffset;
-      parallaxContainer.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    gsap.to(parallaxContainer, {
+      scrollTrigger: {
+        scrub: true,
+      },
+      y: (i, target) => -ScrollTrigger.maxScroll(window) * 0.5,
+      ease: 'none',
+    });
   }, []);
 
-  return (
-    <div
-      ref={parallaxRef}
-      className="parallax-background"
-      style={{
-        backgroundImage: "url('/assets/logo_wisecoda.png')",
-      }}
-    ></div>
-  );
+  return <div ref={parallaxRef} className="parallax-background"></div>;
 };
 
 export default ParallaxBackground;
