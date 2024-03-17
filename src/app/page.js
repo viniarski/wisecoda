@@ -21,10 +21,7 @@ const HomePage = () => {
       <Header />
 
       <main className="flex-grow">
-        <section
-          id="hero"
-          className="relative min-h-screen flex items-center justify-center max-w-7xl mx-auto px-4 pt-8"
-        >
+        <section id="hero" className="min-h-screen max-w-7xl mx-auto px-4 pt-8">
           <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2">
