@@ -11,7 +11,9 @@ const FAQ = () => {
   return (
     <section id="faq" className="bg-gray-100 py-8">
       <div className="max-w-7xl mx-auto px-8 md:px-16">
-        <h2 className="text-4xl font-bold mb-8 text-primary">FAQ</h2>
+        <h2 className="text-4xl text-center font-bold mb-8 text-primary">
+          FAQ
+        </h2>
         <div className="space-y-2">
           <div
             className={`border border-gray-300 rounded-2xl p-6 cursor-pointer transition duration-300 ${
